@@ -6,8 +6,7 @@ import json
 
 url = "https://xxxkp.atlassian.net//rest/api/3/project"
 
-auth = HTTPBasicAuth("krishkprawat02.com", "ATATT3xFfGF00R_xNzK9jt8tBWqEdsAxkUOfOSVEtM2TfaloNmjOIFsZIAV5vi5dzUlKnnKDNJVWyajK5k96TwHtajg-iFpGqo2bt_7horvn_yreujdsfQRjdmynVx94Kv1GNaj6I-7aC9VQr4d-p3DbF3lhkzqZ1oGilyOvyu9tKhcDrIvIKy4=3EAF6574")
-
+auth = HTTPBasicAuth("krishkprawat02@gmail.com", "ATATT3xFfGF0wqABlExJke8XTHePeoVqKbs2IzgCMXLiia-lkEhUjE-S5KMeiP1ddruQdQAXxGiJAQbn6DyzWNAHqjBUNp38co8AGTq27kFYsySjvB5Wd7ZW1ESgP-FgAilkDzKFnNxps0h_52U63B52cq7iWOhQV19-DDYkFVNiRxcMz_MzRTQ=EA46F88E")
 headers = {
   "Accept": "application/json"
 }
@@ -19,4 +18,6 @@ response = requests.request(
    auth=auth
 )
 
-print(json.dumps(json.loads(response.text), sort_keys=True, indent=4, separators=(",", ": ")))
+output= json.loads(response.text)
+name= output[1]["name"]
+print(name)
