@@ -6,7 +6,7 @@ import json
 
 url = "https://xxxkp.atlassian.net//rest/api/3/project"
 
-auth = HTTPBasicAuth("krishkprawat02@gmail.com", "ATATT3xFfGF0wqABlExJke8XTHePeoVqKbs2IzgCMXLiia-lkEhUjE-S5KMeiP1ddruQdQAXxGiJAQbn6DyzWNAHqjBUNp38co8AGTq27kFYsySjvB5Wd7ZW1ESgP-FgAilkDzKFnNxps0h_52U63B52cq7iWOhQV19-DDYkFVNiRxcMz_MzRTQ=EA46F88E")
+auth = HTTPBasicAuth("krishkprawat02@gmail.com", "add tokenn here")
 headers = {
   "Accept": "application/json"
 }
