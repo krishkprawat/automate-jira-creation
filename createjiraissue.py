@@ -33,7 +33,7 @@ payload = json.dumps( {
       "version": 1
     },
     "project": {
-      "key": "XXX"
+      "key": "KKPP"
     },
     "issuetype": {
       "id": "10006"
