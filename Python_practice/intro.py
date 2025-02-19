@@ -46,5 +46,20 @@ print(boy1.capitalize())
 '''count= count  the given word occurance
 endswith()-- if string ends with a givenword then return true otherwise false
 
+find() =  searches for first occurance of the given value, and returns a index. if value is absent then returns -1.
+
+'''
+
+girl1= "ishika kotiyal"
+print(girl1.find("k"))
+
+'''index() =index method searches for the 1stoccurance of given value but if value is absent then raise an exception. '''
+
+'''islanum() = if string consists 0-9 ,a-z, A-Z return true
+isalpha() =  returns true if only alpahabet are presnt . if number present then return false.
+
+swapcase () == swap the cases
+title ()= capitalize each letter of the word within the string
+
 
 '''
