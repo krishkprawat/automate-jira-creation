@@ -12,11 +12,11 @@ print(len(name))   #include spaces
 
 print(name[0:2])
 
-print(name[:4])
+print(name[:4])  #kris
 
 
-string = "ishika"
-print(string[::-2])
+string = "ishika" 
+print(string[::-2]) #skipping second character from last
 print(string[-3:-1]) #this will become [6-3 : 6-1] means 3:5 which is i and k
 
 
@@ -46,7 +46,7 @@ print(boy1.capitalize())
 '''count= count  the given word occurance
 endswith()-- if string ends with a givenword then return true otherwise false
 
-find() =  searches for first occurance of the given value, and returns a index. if value is absent then returns -1.
+ find() =  searches for first occurance of the given value, and returns a index. if value is absent then returns -1.
 
 '''
 
@@ -63,3 +63,8 @@ title ()= capitalize each letter of the word within the string
 
 
 '''
+
+
+# print my name is "kp". =
+
+print('my name is "kp"')
