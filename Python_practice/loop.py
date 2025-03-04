@@ -54,3 +54,34 @@ for i in range(8):
     fin.append(fin[-1]+fin[-2])
 
 print(fin)
+
+
+
+#finding a max num in list
+
+numbers =[1,52,6,5,6,0,885]
+maxnum = numbers[0]
+
+for num in numbers:
+    if num > maxnum:
+        maxnum = num
+print(maxnum)
+
+
+
+#converting a list into a string
+
+
+# list = ["k","r","i","s","h","i","k","a"]
+# string = ''.join(list)
+# print ( string)
+
+#adding two list element together
+
+list_A = [1,2,3]
+list_B = [3,4,5]
+
+result = []
+for i in range(0,3):
+    result.append(list_A[i]+list_B[i])
+print(result)
