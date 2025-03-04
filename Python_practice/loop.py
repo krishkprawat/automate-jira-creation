@@ -69,19 +69,29 @@ print(maxnum)
 
 
 
-#converting a list into a string
+#converting a list into a string only if dtatype under list is a string
 
 
 # list = ["k","r","i","s","h","i","k","a"]
 # string = ''.join(list)
 # print ( string)
 
+'''if the datatypes of all itmes is not an string then first chage all to sting then 
+use join === '''
+
+#list = [1,2,3,4,5]
+
+#result = ''.join([str(item) for item in list])
+#print(result)
+
 #adding two list element together
 
-list_A = [1,2,3]
-list_B = [3,4,5]
+# list_A = [1,2,3]
+# list_B = [3,4,5]
 
-result = []
-for i in range(0,3):
-    result.append(list_A[i]+list_B[i])
-print(result)
+# result = []
+# for i in range(0,3):
+#     result.append(list_A[i]+list_B[i])
+# print(result)
+
+
