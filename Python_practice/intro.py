@@ -16,7 +16,7 @@ print(name[:4])  #kris
 
 
 string = "ishika" 
-print(string[::-2]) #skipping second character from last
+print(string[::-2]) #skipping second character from last ---- ais
 print(string[-3:-1]) #this will become [6-3 : 6-1] means 3:5 which is i and k
 
 
