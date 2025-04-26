@@ -28,7 +28,7 @@ print(girl.upper())
 
 print(girl) #actual string will be same
 
-'''replace() = replace will all the occurance with given string'''
+'''replace() = it will replace  all the occurance with given string'''
 
 print(girl.replace("ishika","KRISHna"))
 
@@ -46,7 +46,7 @@ print(boy1.capitalize())
 '''count= count  the given word occurance
 endswith()-- if string ends with a givenword then return true otherwise false
 
- find() =  searches for first occurance of the given value, and returns a index. if value is absent then returns -1.
+find() =  searches for first occurance of the given value, and returns a index. if value is absent then returns -1.
 
 '''
 
