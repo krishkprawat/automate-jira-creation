@@ -7,3 +7,9 @@ for num in listi:
         max=num
 print(max)
 
+
+#second largerst number is the list
+
+listi.sort()   #list is sorted in place returns none. so dont save it in variable.
+largest= listi[-2]
+print(largest)
