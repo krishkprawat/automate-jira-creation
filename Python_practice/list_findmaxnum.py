@@ -20,8 +20,12 @@ kplist= [1,1,12,2,234,45,45345,556,66,66]
 newlist=sorted(set(kplist))
 print(newlist[-2])
 
-
+ 
 #set will give unique set result but it gives output in set so change this set to list i n last.
 nomber= [1,76,67,67,2,3,4]
 newdaru =list(set(nomber))
 print(newdaru)
+
+
+#withput sort how to find second largets number 
+bottle = [12,34,6,1,3]
