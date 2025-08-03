@@ -22,3 +22,21 @@ more after root n . and if we found no one divide then its a prime number
 ex = 36 
 root n is 6 so from 2 to 6 there are multiple divisor  of  6 then there will be no after 6 also...'''
 
+#find all prime numbers in given range
+
+def findallprime (start, end):
+    
+    for n in range (start, end +1):
+        if  n <=2 :
+            continue
+        
+        for i in range (2, int(math.sqrt(n))  +1):
+            if n % i ==0 :
+                break
+            
+        else:
+            print(n)
+            
+
+
+print(findallprime(4,10))                
