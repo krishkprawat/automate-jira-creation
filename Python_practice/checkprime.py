@@ -39,4 +39,4 @@ def findallprime (start, end):
             
 
 
-print(findallprime(4,10))                
+print(findallprime(0,2))                
