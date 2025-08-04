@@ -30,13 +30,13 @@ print("Maximum value:", find_largest(numbers))
 numbers=[34,56,67,67,4,2,788]
 
 def find_Second_largest():
-    first=second=float('-inf')
+    largest=second=float('-inf')
 
     for num in numbers:
-        if num > first:
-            second = first
-            first = num
-        elif first>num > second:
+        if num > largest:
+            second = largest
+            largest = num
+        elif largest>num > second:
             second = num
     return second
 
@@ -46,6 +46,24 @@ print("Second largest value:", find_Second_largest())
 '''Start with first and second as very small numbers (-inf).
 
 Loop through each number:
-If number is bigger than first, move first to second, and update first.
-Else, if number is between first and second, update second.
-At the end, return second.'''
+If number is bigger than largest_num, move largest to second_largest, and update largest_num with current largest.
+Else, if number is greater than second largest and is not equal to largest (less than largest) then second largest
+is number.
+At the end, return secondlargest.'''
+
+
+# another 
+
+def checkkp(nums):
+    flarge = slarge = float('-inf')
+    n = len(nums)
+    for i in range(0, n):
+        if nums[i]> flarge:
+            slarge=flarge
+            flarge= nums[i]
+        elif nums[i]>slarge and nums[i]!=flarge:
+            slarge=nums[i]
+
+    return slarge
+
+print(checkkp([33,566,788,45,3]))
