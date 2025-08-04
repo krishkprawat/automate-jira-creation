@@ -7,8 +7,8 @@ def checkarm(num):
     while n > 0 :
         ld = n % 10
         total = total+(ld ** nod)
-        n = n // 10
-    return total == num   # num is original value which is not changed
+        n = n // 10  #integer division in Python. It removes the last digit from a number
+    return total == num   # num is original value which is not changed, so comapre total to origal value .
 
 print(checkarm(153))    
     
@@ -31,3 +31,4 @@ print(checkarm(153))
 
 
 # print (check(2,1000))    
+
