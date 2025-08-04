@@ -27,5 +27,4 @@ newdaru =list(set(nomber))
 print(newdaru)
 
 
-#withput sort how to find second largets number 
-bottle = [12,34,6,1,3]
+
