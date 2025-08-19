@@ -1,0 +1,2 @@
+LLM - Large Language Model 
+is a system which is trained with huge data' tools are chatgpt, gemini, claude, deepseek
