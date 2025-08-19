@@ -1,40 +1,55 @@
-def reverse_letters_keep_positions(text: str) -> str:
-    """Reverse only the alphabetic characters in the string while keeping
+'''Reverse only the alphabetic characters in the string while keeping
     spaces and any non-letter characters in their original positions.
+'''
 
-    Examples:
-    - "a,b$c" -> "c,b$a"
-    - "ab c!" -> "cb a!"
-    """
-    characters = list(text)
-    left_index = 0
-    right_index = len(characters) - 1
+'''step 1 - collct all letters 
+step 2 - reverse them 
+step 3 - go to original string
+if character is letter - take from reversed list 
+if character is not a letter - keep it as it is
 
-    while left_index < right_index:
-        if not characters[left_index].isalpha():
-            left_index += 1
-        elif not characters[right_index].isalpha():
-            right_index -= 1
+step 4 - build final string'''
+
+
+def collect(s):
+    letters = []    #this is reversed list
+    for c in s:
+        if c.isalpha():
+            letters.append(c)
+    letters.reverse()
+
+    result = ""   #final string
+    for c in s:
+        if c.isalpha():
+            result += letters.pop(0)    #if alpha then add the reversed leeters in to te result string
         else:
-            characters[left_index], characters[right_index] = (
-                characters[right_index],
-                characters[left_index],
-            )
-            left_index += 1
-            right_index -= 1
+            result += c   #if not alpha then add as it is
+    return result
 
-    return "".join(characters)
+print(collect("a,b$c"))
 
 
-if __name__ == "__main__":
-    samples = [
-        "a,b$c",
-        "ab c!",
-        "kr!sh na@ 123",
-        "Hello, World!",
-        "  a-bC-dEf=ghlj!!  ",
-    ]
+'''other approach'''
 
-    for s in samples:
-        print(f"input : {s}")
-        print(f"output: {reverse_letters_keep_positions(s)}\n")
+def reverse_letters(s):
+    chars = list(s)  #change stirng to list beacuse we have to swap the characters an string is imutable
+
+    left,right = 0, len(chars)-1  #pointer initialize
+
+    while left < right : 
+        if not chars[left].isalpha():   #if left character is not letter then move one step to right
+            left +=1
+        
+        elif not chars[right].isalpha(): #if right  character is not letter then move one step to left
+            right -=1
+
+        else:   
+
+            chars[left], chars[right]=chars[right], chars[left]   #if both are letters then swap it 
+            left+=1
+            right-=1
+
+        return "".join(chars)    # join is a sting method it takes iterables and concatenate then
+        #into a single sting using the seperator ""
+    
+print(reverse_letters("a,b$c"))
