@@ -1,0 +1,43 @@
+pytest file starts with test_ or end with _test
+methdd names starts with test
+
+commands
+
+pytest <file name> -v -s  -- run one file
+pytest -k <name> -v -s  --- method name execution
+-v - vervose - more info - metadata
+-s -- Show print statements
+pytest -m  smoke --- marker based test
+
+-- run last failed test
+
+pytest --lf
+
+
+-- run test excluding last failed
+
+pytest --ff
+
+
+---- stop after first failure
+pytest -x
+
+
+--- stop after n failures
+pytest --maxfail=3
+
+-- ----run test in parallel
+
+nneds pytest-xdist installed 
+
+pytest -n 4 --- run test across 4 cpus
+
+
+----------generate html report 
+pytest --html=report.html
+
+
+
+
+
+
